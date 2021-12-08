@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<meta name="vewport" content="with=device-width, initial-scale=1.0">
+	<title>Harrison Sims - Portfolio</title>
+	<link rel="stylesheet" href="test_style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+</head>
+<body>
+<section class="sub-header">
+	<h1 class="centered">Portfolio</h1>
+
+<nav class="nav-bar-topp" id="nav-bar-ID">
+
+	
+	
+	<div class="nav-links" id="navLinks">
+		<i class="fa fa-times" onclick="hideMenu()"></i>
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="about.html">ABOUT</a></li>
+			<li><a href="portfolio.html">PORTFOLIO</a></li>
+			<li><a href="">CONTACT</a></li>
+			<li><a href="pdfs/Harrison_Sims_CV.pdf" class="resume-download" download="Harrison_Sims_CV.pdf"> &nbsp RESUM&Eacute &nbsp </a></li>
+		</ul> 
+	</div>
+	<i class="fa fa-bars" onclick="showMenu()"></i>
+</nav>
+
+
+</section>
+
+
+
+
+
+
+
+<section class="projects">
+<h1>-&nbsp&nbsp Projects &nbsp&nbsp-</h1>
+	<h4>Recipe Cleaner</h4>
+	<div class="row">
+		<div class="proj-col">
+			<img src="images/Wordcloud.png">
+		</div>
+		<div class="proj-center-col">
+			<p>test2</p>
+		</div>
+		<div class="proj-col">
+			<div>
+				<ul>
+					<a href="https://share.streamlit.io/hs00165/online_recipe_cleaner/main/online_recipe_cleaner/online_recipe_cleaner.py"><li class="project-link">visit site</li></a>
+					<a href="https://github.com/hs00165/online_recipe_cleaner"><li class="project-link">Get Code</li></a>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<hr>
+
+	<h4>GODDESS simulation toolbox</h4>
+	<div class="row">
+		<div class="proj-col">
+			<img src="images/GODDESS-toolbox.png">
+		</div>
+		<div class="proj-center-col">
+			<p>test2</p>
+		</div>
+		<div class="proj-col">
+			<div>
+				<ul>
+					<a href="https://public.tableau.com/app/profile/harrison.sims/viz/GODDESStoolbox/EjectileKinematics"><li class="project-link">visit site</li></a>
+					<a href=""><li class="project-link">Get Code</li></a>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<hr>
+
+	<h4>RelKin - A Relativistic Nuclear Reaction Kinematics Calculator GUI</h4>
+	<div class="row">
+		<div class="proj-col">
+			<img src="images/RelKin.PNG">
+		</div>
+		<div class="proj-center-col">
+			<p>test2</p>
+		</div>
+		<div class="proj-col">
+			<div>
+				<ul>
+					<a href=""><li class="project-link">Get Code</li></a>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<hr>
+
+
+	<h1>-&nbsp&nbsp Publications &nbsp&nbsp-</h1>
+	<h4>Measuring neutron-transfer reactions with fast mass≈80 beams<br> to reduce uncertainties in spectroscopic factors</h4>
+	<div class="row">
+		<div class="proj-col">
+			<img src="images/Data_Analysis.gif">
+		</div>
+		<div class="proj-center-col">
+			<p>test2</p>
+		</div>
+		<div class="proj-col">
+			<div>
+				<ul>
+					<a href="https://doi.org/doi:10.7282/t3-q585-3k05"><li class="project-link">Download</li></a>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<hr>
+<!-- https://doi.org/doi:10.7282/t3-q585-3k05 -->
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!----------footer---------->
+<section class="footer">
+	<h4>Contact</h4>
+	<p> <b>Email:</b> harrysims94@gmail.com</p>
+	<div class="icons">
+		<i class="fa fa-linkedin"></i>	
+		<i class="fa fa-github"></i>	
+	</div>
+
+</section>
+
+
+
+
+
+
+
+<!-------------JavaScript for Toggle Menu-------------->
+<script>
+	
+	var navLinks = document.getElementById("navLinks");
+
+	function showMenu(){
+		//navLinks.style.position='absolute';
+		navLinks.style.right = "0";
+		navLinks.style.height = "100vh";
+	}
+
+	function hideMenu(){
+		navLinks.style.right = "-220px";
+	}
+	
+
+
+
+
+
+	window.onscroll = function() {myFunction()};
+
+	function myFunction() {
+	  if (document.body.scrollTop > 235 || document.documentElement.scrollTop > 235) {
+	    document.getElementById("nav-bar-ID").className = "nav-bar-topp-scrolled";
+	  } else {
+	    document.getElementById("nav-bar-ID").className = "nav-bar-topp";
+	  }
+	}
+
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

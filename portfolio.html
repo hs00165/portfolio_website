@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<meta name="vewport" content="with=device-width, initial-scale=1.0">
+	<title>Harrison Sims - Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<section class="sub-header">
+	<nav>
+		<a href="index.html"></a>
+		
+		<div class="nav-links" id="navLinks">
+			<i class="fa fa-times" onclick="hideMenu()"></i>
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="portfolio.html">PORTFOLIO</a></li>
+				<li><a onclick="GoToContacts()">CONTACT</a></li>
+				<li><a href="pdfs/Harrison_Sims_CV.pdf" class="resume-download" download="Harrison_Sims_CV.pdf"> &nbsp RESUM&Eacute &nbsp </a></li>
+			</ul> 
+		</div>
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+	</nav>
+	<h1>Portfolio</h1>
+</section>
+
+
+
+
+<section class="projects">
+<h1>-&nbsp&nbsp Highlighted Projects &nbsp&nbsp-</h1>
+	<h3>Recipe Cleaner</h3>
+	<div class="subheader">
+	<p>A web app that takes a recipe website URL as input, and returns the ingredients and instructions in a clean format.</p>
+	</div>
+	<div class="row">
+		<div class="proj-col">
+			<img src="images/Wordcloud.png">
+		</div>
+		<div class="proj-center-col">
+			<p>I have an enormous passion for cooking, and of course, eating. Like most people these days I rely on the internet for new and interesting recipes. However, many online recipes require the user to scroll through pages and pages of unnecessary back-story, while bombarding you with distracting Ads. <br> 
+			My web-app solution scrapes the website of interest, and returns the section of text that is most likely to be the ingredients and instructions based on the prediction of a Naive Bayes model trained on over 100 different recipe websites.</p>
+		</div>
+		<div class="proj-col">
+			<div>
+				<ul>
+					<a href="https://share.streamlit.io/hs00165/online_recipe_cleaner/main/online_recipe_cleaner/online_recipe_cleaner.py"><li class="project-link">visit site</li></a>
+					<a href="https://github.com/hs00165/online_recipe_cleaner"><li class="project-link">Get Code</li></a>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<hr>
+
+
+
+
+	<h3>Monte Carlo Solid-Angle Simulator</h3>
+	<div class="subheader">
+	<p>A javascript, html, and css web-app that models the solid angle of a user-defined detector surface via Monte Carlo relative to a source.</p>
+	</div>
+	<div class="row">
+		<div class="proj-col">
+			<img src="images/simulation_gif.gif">
+		</div>
+		<div class="proj-center-col">
+			<p>Designing experimental setups in nuclear or particle physics requires an intimte knowledge of the solid angle coverage of the detectors, relative to a source or reaction location. This program simulates the trajectory of randomly emitted particles from a radioactive source, and flags whther or not they hit a user-defined detector. Simulating enough particles, the solid angle of the detector can be approximated to a high level of accuracy..</p>
+		</div>
+		<div class="proj-col">
+			<div>
+				<ul>
+					<a href="https://hs00165.github.io/solidAngleSimulator/"><li class="project-link">visit site</li></a>
+					<a href="https://github.com/hs00165/solidAngleSimulator"><li class="project-link">Get Code</li></a>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<hr>
+
+
+
+	<h3>GODDESS simulation toolbox</h3>
+	<div class="subheader">
+	<p>A Tableau dashboard designed to simulate the parameters of nuclear-physics experiments.</p>
+	</div>
+	<div class="row">
+		<div class="proj-col">
+			<img src="images/GODDESS-toolbox.png">
+		</div>
+		<div class="proj-center-col">
+			<p>When collaborators wish to propose an experiment using the GODDESS detector, they ask for simulations to inform the efficacy of their proposal. This dashboard uses known nuclear masses and Silicon stopping power to determine the reaction kinematics, maximum particle energy that can be detected and many other important experimental parameters. This significantly improved the workflow of proposal writing and collaboration across institutions.</p>
+		</div>
+		<div class="proj-col">
+			<div>
+				<ul>
+					<a href="https://public.tableau.com/app/profile/harrison.sims/viz/GODDESStoolbox/EjectileKinematics"><li class="project-link">visit site</li></a>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<hr>
+
+	<h3>RelKin</h3>
+	<div class="subheader">
+	<p>A Relativistic Nuclear-Reaction Kinematics Calculator GUI.</p>
+	</div>
+	<div class="row">
+		<div class="proj-col">
+			<img src="images/RelKin.PNG">
+		</div>
+		<div class="proj-center-col">
+			<p>This GUI application was written in Python using TKinter and matplotlib, and uses nuclear masses from the AME2016 database to calculate the relativistic kinematics of the light-ion ejectile of a user-specified nuclear reaction. 
+		</div>
+		<div class="proj-col">
+			<div>
+				<ul>
+					<a href="https://github.com/hs00165/KinCalc"><li class="project-link">Get Code</li></a>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<hr>
+
+
+	<h1>-&nbsp&nbsp Publications &nbsp&nbsp-</h1>
+	<h3>Measuring neutron-transfer reactions with fast mass≈80 beams<br> to reduce uncertainties in spectroscopic factors</h3>
+	<div class="row">
+		<div class="proj-col">
+			<img src="images/Data_Analysis.gif">
+		</div>
+		<div class="proj-center-col">
+			<p>Using the combined-energy-method for the first time with a heavy, neutron-rich RIB, the spectroscopic factors of low-lying states in 85Se have been studied through the 84Se(d,p) reaction. With the combined analysis of the low- and high-energy measurements, single-particle Asymptotoc Normalization Coewffiicients (ANCs) were constrained for the 5/2+ ground state and 1/2+ first excited state, and spectroscopic factors were deduced to be 0:28 +/- 0:05 and 0:26 +/- 0:07 for these states, respectively.</p>
+		</div>
+		<div class="proj-col">
+			<div>
+				<ul>
+					<a href="https://doi.org/doi:10.7282/t3-q585-3k05"><li class="project-link">Download</li></a>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<hr>
+<!-- https://doi.org/doi:10.7282/t3-q585-3k05 -->
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!----------footer---------->
+<section class="footer">
+	<h4>Contact</h4>
+	<p> <b>Email:</b> harrysims94@gmail.com</p>
+	<dic class="icons">
+		<a href="https://www.linkedin.com/in/harrisonesims/"><i class="fa fa-linkedin"></i></a>
+		<a href="https://www.github.com/hs00165"><i class="fa fa-github"></i></a>	
+	</dic>
+
+</section>
+
+
+
+
+
+
+
+<!-------------JavaScript for Toggle Menu-------------->
+<script>
+	
+	var navLinks = document.getElementById("navLinks");
+
+	function showMenu(){
+		//navLinks.style.position='absolute';
+		navLinks.style.right = "0";
+	}
+
+	function hideMenu(){
+		navLinks.style.right = "-220px";
+	}
+
+	function GoToContacts(){
+		window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
+	}
+	
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<meta name="vewport" content="with=device-width, initial-scale=1.0">
+	<title>Harrison Sims - Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<section class="header">
+	<nav>
+		<a href="index.html"></a>
+		
+		<div class="nav-links" id="navLinks">
+			<i class="fa fa-times" onclick="hideMenu()"></i>
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="portfolio.html">PORTFOLIO</a></li>
+				<li><a onclick="GoToContacts()">CONTACT</a></li>
+				<li><a href="pdfs/Harrison_Sims_CV.pdf" class="resume-download" download="Harrison_Sims_CV.pdf"> &nbsp RESUM&Eacute &nbsp </a></li>
+			</ul>
+		</div>
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+	</nav>
+	<div class="text-box">
+		<h1>Harrison Sims<br>Data Scientist</h1>
+		<p>This is my first website, hopefully this text shows up. <br>Otherwise, I'd be a right doughnut...
+		</p>
+			
+	</div>
+</section>
+
+
+
+
+
+
+
+<!----------footer---------->
+<section class="footer">
+	<h4>Contact</h4>
+	<p> <b>Email:</b> harrysims94@gmail.com</p>
+	<dic class="icons">
+		<a href="https://www.linkedin.com/in/harrisonesims/"><i class="fa fa-linkedin"></i></a>
+		<a href="https://www.github.com/hs00165"><i class="fa fa-github"></i></a>	
+	</dic>
+
+</section>
+
+
+
+
+
+
+
+<!-------------JavaScript for Toggle Menu-------------->
+<script>
+	
+	var navLinks = document.getElementById("navLinks");
+
+	function showMenu(){
+		//navLinks.style.position='absolute';
+		navLinks.style.right = "0";
+	}
+
+	function hideMenu(){
+		navLinks.style.right = "-220px";
+	}
+
+	function GoToContacts(){
+		window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
+	}
+	
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

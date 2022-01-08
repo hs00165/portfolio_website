@@ -32,8 +32,8 @@ nav{
 	padding-bottom: 1px;
 }
 .nav-links .resume-download:hover{
-	border-color: var(--purple);
-	background-color: var(--purple);
+	border-color: var(--granny-smith);
+	background-color: var(--granny-smith);
 }
 .nav-links{
 	flex:  1;
@@ -57,7 +57,7 @@ nav{
 	content:  '';
 	width:  0%;
 	height:  3px;
-	background:  var(--purple);
+	background:  var(--granny-smith);
 	display:  block;
 	margin:  auto;
 	transition:  0.5s;
@@ -104,7 +104,7 @@ nav .fa{
 	}
 	.nav-links{
 		position:  absolute;
-		background:  var(--purple);
+		background:  var(--granny-smith);
 		border-style:  solid;
 		border-color: #fff;
 		height: 100vh;
@@ -137,18 +137,22 @@ nav .fa{
 	width: 100%;
 	text-align: center;
 	padding: 30px 0;
-	background: var(--granny-smith);
+	background-image:  linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.3)),url(images/trianglify-export.PNG);
+	background-size: cover;
 }
 
 .footer h4{
 	margin-bottom: 5px;
 	margin-top: 20px;
 	font-weight: 400px;
+	font-size: 20px;
+	color: #FFFFFF;
 }
 
 .footer p{
-	font-size: 18px;
+	font-size: 20px;
 	transition: 0.5s;
+	color: #FFFFFF;
 }
 
 
@@ -163,7 +167,7 @@ nav .fa{
 }
 
 .icons .fa:hover{
-	color: var(--scarpa-flow);
+	color: var(--silver-chalice);
 }
 
 .icons a {
@@ -188,7 +192,7 @@ nav .fa{
 .sub-header{
 	height: 30vh;
 	width: 100%;
-	background-image:  linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.3)),url(images/about-banner.PNG);
+	background-image:  linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.3)),url(images/trianglify-export.PNG);
 	background-size: cover;
 	text-align: center;
 }
@@ -223,6 +227,11 @@ nav .fa{
 
 }
 
+.profile-col-text{
+	flex-basis: 47%;
+
+}
+
 .profile h1{
 	padding-top: 40px;
 	padding-bottom: 25px;
@@ -237,9 +246,42 @@ nav .fa{
 	font-size: 18px;
 }
 
-.skill h5{
-	font-weight: 400;
+.profile-col-text p{
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	font-size: 18px;
 }
+
+.profile-col-text h4{
+	padding-bottom: 10px;
+	font-size: 20px;
+}
+
+.description{
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-bottom: 20px;
+	padding-top: 50px;
+	font-size: 18px;
+	text-align: justify;
+}
+
+.skill p{
+	padding: 2px;
+	font-size: 16px;
+	text-align: left;
+	padding-left: 12px;
+}
+
+.skill h5{
+	font-weight: 520;
+	font-size: 13pt;
+	text-align: left;
+	padding-left: 12px;
+}
+
 
 
 @media(max-width: 700px){
@@ -293,6 +335,7 @@ p{
 	border-style: solid;
 	box-sizing: border-box;
 	transition:  0.2s;
+	text-align: justify;
 }
 .about-col img{
 	flex-basis: 15%;
